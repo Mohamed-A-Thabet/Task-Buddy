@@ -1,0 +1,25 @@
+.settings-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+
+.setting-option {
+    border: 1px solid black;
+    width: 100%;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+    background-color: ghostwhite;
+}
+
+.setting-option:hover {
+    cursor: pointer;
+}
+ 
+.settings-container p {
+    font-size: 1em;
+    padding: 2px 4px;
+}

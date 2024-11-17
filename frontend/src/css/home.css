@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+}
+
+.categories-container{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em 1em;
+}
+
+.category-tile-container {
+    height: 25vh;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: inherit;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.category-tile-container:hover {
+    transform: scale(1.01);
+}
+
+.category-actions-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.2em;
+    display: flex;
+    gap: 0.2em;
+}
+
+.category-tile-container:hover{
+    cursor: pointer;
+}
+
+.category-name-text {
+    font-size: .5em;
+    text-align: center;
+}
+
+.adding-category-container {
+    color:#222222;
+    background-color: rgb(226, 219, 219);
+}
+
+.adding-category-tile {
+    justify-content: space-evenly;
+    font-size: 1em;
+    padding: .8em .5em;
+    gap: .5em;
+}
+
+select {
+    font-size: 1em;
+}
+
+.category-name-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-name-container input {
+    width: 100%;
+    height: 100%;
+}
+
+
+.category-color-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-color-container select{
+    width: 100%;
+    height: 100%;
+}
+
+.category-buttons-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1em;
+}
+
+.category-buttons-container button {
+    font-family: inherit;
+}
+
+.fa-circle-check:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.fa-pen-to-square:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.fa-trash:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.deleting-category-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleting-category-modal {
+    height: 50%;
+    width: 50%;
+    background-color: #FFFFFF;
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.deleting-category-buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: inherit;
+}
+
+.deleting-category-buttons-container button {
+    width: 40%;
+}
+
+.deleting-category-buttons-container button:not(:first-child) {
+    color: red;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-title-container {
+    min-height: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+}
+
+.category-title-text {
+    width: 70%;
+    font-size: .8em;
+    text-align: center;
+}
+
+.return-from-category-button {
+    position: absolute;
+    left: 1.5rem;
+}
+
+.fa-left-long {
+    font-size: 2rem;
+}
+
+.fa-left-long:hover {
+    transform: scale(1.05);
+}
+
+.category-tasks-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 1px solid black;
+    margin: 1em;
+    background-color: rgb(243, 238, 238);
+}
+
+.task-container {
+    border: 1px solid #222222;
+    border-radius: 1%;
+    min-height: 22vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5em;
+}
+
+.task-actions {
+    position: absolute;
+    display: flex;
+    gap: 1em;
+    padding: .7em;
+    top: 0;
+    right: 0;
+}
+
+.task-title {
+    font-size: 2em;
+}
+
+.task-footer {
+    position: absolute;
+    width: 4.5em;
+    height: 1em;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.task-priority-high {
+    background-color: red;
+}
+
+.task-priority-medium {
+    background-color: orange;
+}
+
+.task-priority-low {
+    background-color: yellow;
+}
+
+.add-task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 219, 219);
+    color:#222222;
+}
+
+.add-task-container:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.adding-task-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1em;
+    width: 100%;
+    align-self: center;
+    background-color: #FFFFFF;
+}
+
+.task-name-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.task-name-container input {
+    width: 90%;
+}
+
+.task-priority-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.task-priority-container select {
+    width: 50%;
+}
+
+.task-actions-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.task-actions-container button {
+    width: 30%;
+}
+
+.loading {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+
+.red {
+    color: #FFFFFF;
+    background-color: #e44444;
+}
+
+.orange {
+    color: #FFFFFF;
+    background-color: #d15f13;
+}
+
+.green {
+    color: #FFFFFF;
+    background-color: #4CAF50;
+}
+
+.blue {
+    color: #FFFFFF;
+    background-color: #4faaf4;
+}
+
+.completed-task {
+    background-color: #4CAF50;
+}
+
+@media (min-width: 800px) {
+    .categories-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    a {
+        font-size: 1.25rem;
+        text-decoration: none;
+    }
+    .task-name-container input {
+        width: 50%;
+    }
+    .task-priority-container select {
+        width: 25%;
+    }
+    .task-actions-container button{
+        width: 20%;
+    }
+}
+

@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+
+.auth-container {
+    margin: 2rem auto 0 auto;
+    width: 70%;
+    border: 1px solid gray;
+}
+
+.error-message {
+    text-align: center;
+    background-color: white;
+    height: 3rem;
+    padding: 0.5em 0.1em;
+    color: red;
+}
+
+.form-type {
+    height: 3em;
+    display: flex;
+}
+
+.form-type button {
+    width: 100%;
+    border: none;
+    font-size: 1em;
+    background-color: azure;
+}
+
+.form-type button:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.form button {
+    height: 3em;
+}
+
+label {
+    font-size: .8em;
+}
+
+.label-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.label-input-container input{
+    height: 2em;
+    font-size: 1em;
+    padding: 2px 4px;
+    border: 1px solid gainsboro
+}
+
+.bottom-border {
+    border-bottom: 2px solid blue !important;
+}
