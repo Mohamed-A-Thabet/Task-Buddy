@@ -1,4 +1,4 @@
-# Task Buddy: taskbuddyapp.com
+# Task Buddy, [taskbuddyapp.com](https://taskbuddyapp.com)
 
 A simple CRUD to-do list app with tasks organized into categories. This is a full-stack web application built with a React frontend, a Java backend, and a MongoDB database.
 
